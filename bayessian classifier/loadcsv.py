@@ -1,5 +1,16 @@
+#Filename :loadcsv.py
+#----------------Simple Bayessian Classifier------------------
+#---------Fauzanil Zaki, Wiladhianty Yulianova 2016-----------
+#------------------github.com/fauzanil------------------------
+#contain functions that used
+
+#library Load
 import csv
 
+
+#Func           : dataLister put the csv into formatable list
+#Input          : CSV lable range, CSV file name
+#Return Value   : Listed data, data length
 
 def dataLister(labelRange,inputCSV,):
     with open(inputCSV,"rb") as f:
@@ -8,8 +19,12 @@ def dataLister(labelRange,inputCSV,):
         reader = csv.reader(f)
         for row in reader:
             content.append(list(row[i] for i in included_cols))
-        return content,len(content[0])
+        return content
 
+
+#Func           : classProbability find class probavility and probability for each tuple
+#Input          : listedData, Tuples
+#Return Value   : Class probability, and each tuple probability in dictionary format for each tuple
 
 
 def classProbability(listedData,tuples):
@@ -49,8 +64,15 @@ def classProbability(listedData,tuples):
 
     return tupleProb,result
 
-    #return result,classProb,sum-1
-    #return (len(tuples))
+
+
+
+#Func           : classFinder find class for tuple
+#Input          : data (dictionary whlist list every probability for each class available)
+# ex {0:{class1 : value},{class2:value}}
+#Return Value   : Classified class
+
+
 
 def classFinder(data):
     classes = {}
@@ -74,7 +96,6 @@ def classFinder(data):
 
 
 
-#print classFinder(classProbability(dataLister(7,"csv/car.csv")[0],["vhigh","low","3","2","big","low"]))
 
-print(dataLister(7,"csv/car.csv")[1])
+
 
