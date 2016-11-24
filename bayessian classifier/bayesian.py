@@ -18,3 +18,4 @@ if(len(tuple) != (length) - 1):
 else:
     classified = classFinder(classProbability(dataLister(length,filename),tuple))
     print ("Tuple classified as : " + classified)
+    raw_input("Press Enter to continue...")
