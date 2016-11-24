@@ -13,5 +13,8 @@ filename = raw_input("Enter CSV File Name :")
 length = int(raw_input("Enter CSV Column Length :"))
 tupleraw = raw_input("Enter Tuple Test (With space without quote) :")
 tuple = list(map(str, tupleraw.split()))
-classified = classFinder(classProbability(dataLister(length,filename),tuple))
-print ("Tuple classified as : " + classified)
+if(len(tuple) != (length) - 1):
+    print("Tuple size not match, it should be " +str(length -1)+(" tuple"))
+else:
+    classified = classFinder(classProbability(dataLister(length,filename),tuple))
+    print ("Tuple classified as : " + classified)
