@@ -8,7 +8,7 @@ def dataLister(labelRange,inputCSV,):
         reader = csv.reader(f)
         for row in reader:
             content.append(list(row[i] for i in included_cols))
-        return content
+        return content,len(content[0])
 
 
 
@@ -74,5 +74,7 @@ def classFinder(data):
 
 
 
+#print classFinder(classProbability(dataLister(7,"csv/car.csv")[0],["vhigh","low","3","2","big","low"]))
 
+print(dataLister(7,"csv/car.csv")[1])
 
