@@ -72,10 +72,7 @@ def classFinder(data):
     return classResult
 
 
-#print(classProbability(dataLister(7,"csv/car.csv")),[])
 
-
-print classFinder(classProbability(dataLister(7,"csv/car.csv"),["vhigh","low","3","2","big","low"]))
 
 
 
