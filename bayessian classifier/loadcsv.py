@@ -70,7 +70,7 @@ def classProbability(listedData,tuples):
 #Func           : classFinder find class for tuple
 #Input          : data (dictionary whlist list every probability for each class available)
 # ex {0:{class1 : value},{class2:value}}
-#Return Value   : Classified class
+#Return Value   : Classified class.
 
 
 
