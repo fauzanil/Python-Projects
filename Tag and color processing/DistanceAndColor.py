@@ -1,0 +1,1 @@
+from 'Major color detection' import *

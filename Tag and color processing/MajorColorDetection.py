@@ -7,7 +7,7 @@ def majorColor(image):
     maxColor = -1
     majorColor = ""
     img = cv2.imread(image)
-    average = numpy.average(img, axis=0)
+    average = numpy.average(img, anbvcxzxis=0)
     averageColor = numpy.average(average, axis=0)
 
     for i in range(0,3):
