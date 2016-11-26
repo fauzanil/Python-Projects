@@ -20,14 +20,22 @@ forwardBackwardp = GPIO.PWM(forwardBackward,50)
 
 rotateBodyp.start(1)
 forwardBackwardp.start(1)
-clawp.start(1)
-while 1:
+clawp.start(5)
 
-    clawp.ChangeDutyCycle(6)
-    time.sleep(3)
-    rotateBodyp.ChangeDutyCycle(7)
-    time.sleep(3)
-    forwardBackwardp.ChangeDutyCycle(12)
-    time.sleep(3)
-    clawp.ChangeDutyCycle(1)
+try:
+    while 1:
 
+        clawp.ChangeDutyCycle(1)
+        time.sleep(3)
+        #rotateBodyp.ChangeDutyCycle(7)
+        #time.sleep(3)
+        #forwardBackwardp.ChangeDutyCycle(12)
+        #time.sleep(3)
+        clawp.ChangeDutyCycle(3)
+        time.sleep(2)
+        clawp.ChangeDutyCycle(6)
+        time.sleep(2)
+        clawp.ChangeDutyCycle(12)
+except KeyboardInterrupt:
+	clawp.stop()
+    GPIO.cleanup()
