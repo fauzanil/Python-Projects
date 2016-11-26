@@ -23,7 +23,7 @@ forwardBackwardp.start(1)
 clawp.start(1)
 while 1:
 
-    clawp.ChangeDutyCycle(12)
+    clawp.ChangeDutyCycle(6)
     time.sleep(3)
     rotateBodyp.ChangeDutyCycle(7)
     time.sleep(3)
