@@ -29,5 +29,5 @@ while 1:
     time.sleep(1)
     forwardBackwardp.ChangeDutyCycle(12)
     time.sleep(1)
-    clawp.ChangeDutyCycle(12)
+    clawp.ChangeDutyCycle(1)
 
