@@ -1,12 +1,16 @@
 from TagDistance import *
 from MajorColorDetection import *
+from ServoControl import *
 from picamera import PiCamera
 
 
-camera = PiCamera()
-camera.capture("images/cache.png")
-print(majorColor('images/cache.png'))
-print(markerDistance('images/cache.png'))
+while 1:
+    camera = PiCamera()
+    camera.capture("images/cache.png")
+    color = majorColor('images/cache.png')
+    print(color)
+    # print(markerDistance('images/cache.png'))
+    armMovement(color)
 
 
 
