@@ -23,11 +23,11 @@ forwardBackwardp.start(1)
 clawp.start(1)
 while 1:
 
-    clawp.ChangeDutyCycle(2)
-    time.sleep(1)
+    clawp.ChangeDutyCycle(12)
+    time.sleep(3)
     rotateBodyp.ChangeDutyCycle(7)
-    time.sleep(1)
+    time.sleep(3)
     forwardBackwardp.ChangeDutyCycle(12)
-    time.sleep(1)
+    time.sleep(3)
     clawp.ChangeDutyCycle(1)
 
