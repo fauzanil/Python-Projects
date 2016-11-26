@@ -65,4 +65,3 @@ def markerDistance(imagePath):
 
 #testpath = "images/14cm.png"
 
-#print(markerDistance(testpath))

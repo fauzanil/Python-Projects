@@ -26,6 +26,6 @@ def majorColor(image):
     return channelToColor(majorColor)
 
 
-#print(majorColor('images/testimage.jpg'))
+
 
 
