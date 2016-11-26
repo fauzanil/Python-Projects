@@ -16,7 +16,7 @@ GPIO.setup(rotateBody,GPIO.OUT)
 rotateBodyp = GPIO.PWM(rotateBody,50)
 #clawp = GPIO.PWM(claw,50)
 #upDownp = GPIO.PWM(upDown,50)
-# forwardBackwardp = GPIO.PWM(forwardBackward,50)
+#forwardBackwardp = GPIO.PWM(forwardBackward,50)
 
 
 rotateBodyp.start(5)
