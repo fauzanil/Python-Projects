@@ -1,5 +1,5 @@
 #Filename :TagDistance.py
-#---------------------Tag Distance Finder---------------------
+#----------------------Tag Distance Finder--------------------
 #-----------------------Fauzanil Zaki,2016--------------------
 #----------------------github.com/fauzanil--------------------
 # Modified from : http://www.pyimagesearch.com/2015/01/19/find-distance-camera-objectmarker-using-python-opencv/
@@ -39,7 +39,7 @@ def markerDistance(imagePath):
     # width used = 3.0 cm
     KNOWN_WIDTH = 3.0
     #image for calibration can be found at images/calibration.png
-    image = cv2.imread(imagesPath[0])
+    image = cv2.imread("images/calibration.png")
     marker = find_marker(image)
     focalLength = (marker[1][0] * KNOWN_DISTANCE) / KNOWN_WIDTH
     #Load the image
@@ -47,7 +47,7 @@ def markerDistance(imagePath):
     #Find the marker
     marker = find_marker(image)
     #Find the distance
-    cms = distance_to_camera(KNOWN_WIDTH, focalLength, marker[1][0]))
+    cms = distance_to_camera(KNOWN_WIDTH, focalLength, marker[1][0])
 
         # draw a bounding box around the image and display it
         # Uncomment the lines below to draw on box on the detected tag
@@ -63,6 +63,6 @@ def markerDistance(imagePath):
 
 
 
-testpath = "images/calibration.png"
+#testpath = "images/14cm.png"
 
-print(markerDistance(testpath))
+#print(markerDistance(testpath))

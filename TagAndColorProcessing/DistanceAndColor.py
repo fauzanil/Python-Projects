@@ -3,8 +3,8 @@ from MajorColorDetection import *
 from picamera import PiCamera
 
 
-
 camera = PiCamera()
+
 
 
 
