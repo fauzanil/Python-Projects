@@ -28,4 +28,6 @@ while 1:
     rotateBodyp.ChangeDutyCycle(7)
     time.sleep(1)
     forwardBackwardp.ChangeDutyCycle(12)
+    time.sleep(1)
+    clawp.ChangeDutyCycle(12)
 
